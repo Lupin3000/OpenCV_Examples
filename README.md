@@ -17,6 +17,7 @@ All pictures are downloaded from [unsplash.com](https://unsplash.com/).
 ## Table of Contents
 
 - [Simple Frontal Face Detection](./examples/face_detection.py)
+- [Simple Eye Detection](./examples/eye_detection.py)
 
 ## Usage
 
