@@ -10,7 +10,7 @@ description = 'Eye detection with Python & OpenCV'
 epilog = 'The author assumes no liability for any damage caused by use.'
 
 # create argparse Object
-parser = argparse.ArgumentParser(prog='./face_detection.py', description=description, epilog=epilog)
+parser = argparse.ArgumentParser(prog='./eye_detection.py', description=description, epilog=epilog)
 
 # set mandatory arguments
 parser.add_argument('image', help="Image path", type=str)
