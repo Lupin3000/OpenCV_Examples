@@ -6,7 +6,7 @@ import sys
 import cv2
 
 # define argparse description/epilog
-description = 'Image Face detection'
+description = 'Image Face detection with Python & OpenCV'
 epilog = 'The author assumes no liability for any damage caused by use.'
 
 # create argparse Object
