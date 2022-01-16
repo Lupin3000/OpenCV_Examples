@@ -43,4 +43,17 @@ $ python3 body_detection.py -h
 $ python3 body_detection.py ../../src/img/karina-carvalho-fKTKVrNqXQQ-unsplash.jpg lower
 ```
 
+**Cat Detection**
+
+```shell
+# change into directory
+$ cd OpenCV_Examples/examples/lesson_01/
+
+# show help
+$ python3 cat_detection.py -h
+
+# run example for type extended
+$ python3 cat_detection.py ../../src/img/paul-hanaoka-w2DsS-ZAP4U-unsplash.jpg extended
+```
+
 [Go Back](../../README.md)

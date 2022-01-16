@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 import argparse
-from pathlib import Path
 import sys
+from pathlib import Path
+
 import cv2
 
 # define argparse description/epilog
