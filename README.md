@@ -6,11 +6,15 @@ You can adapt, improve and use the code for your projects as you wish. The autho
 
 ## Photos
 
-The photos for identification can be found [here](./src/img/README.md).
+The photos for identification can be found [here](./src/img).
+
+## Haarcascade
+
+The Cuda haarcascade file can be found [here](./src/haarcascades)
 
 ## Table of Contents
 
-- [Lesson 1](examples/lesson_01/README.md)
+- [Lesson 1](examples/lesson_01)
   - [Frontal Face Detection](examples/lesson_01/face_detection.py)
   - [Eye Detection](examples/lesson_01/eye_detection.py)
   - [Body Detection](examples/lesson_01/body_detection.py)
