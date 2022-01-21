@@ -6,11 +6,15 @@ You can adapt, improve and use the code for your projects as you wish. The autho
 
 ## Photos
 
-The photos for identification can be found [here](./src/img).
+The photos for identification can be found [here](src/img).
+
+## Videos
+
+The videos for identification can be found [here](src/video).
 
 ## Haarcascade
 
-The Cuda haarcascade file can be found [here](./src/haarcascades)
+The Cuda haarcascade file can be found [here](src/haarcascades).
 
 ## Table of Contents
 
