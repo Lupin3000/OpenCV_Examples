@@ -29,4 +29,16 @@ $ python3 flask_csi_camera.py
 # open link from terminal
 ```
 
+### Note
+
+The example implementation is not thread save! Please close first the browser, wait for terminal output like:
+
+```
+GST_ARGUS: Cleaning up
+CONSUMER: Done Success
+GST_ARGUS: Done Success
+```
+
+After stop python application. May you need to reboot your device.
+
 [Go Back](../../README.md)
