@@ -26,3 +26,5 @@ The Cuda haarcascade file can be found [here](src/haarcascades).
 - [Lesson 2](examples/lesson_02)
   - [Video Detection](examples/lesson_02/video.py)
   - [CSI Camera Detection](examples/lesson_02/csi_camera.py)
+- [Lesson 3](examples/lesson_03)
+  - [Browser CSI Camera Detection](examples/lesson_03/flask_csi_camera.py)

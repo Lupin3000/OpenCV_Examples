@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        body, div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .center {
+            margin: auto;
+            width: 800px;
+            text-align: center;
+        }
+        .note {
+            padding: 5px;
+            font-size: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Face Detection with CSI Camera</h1>
+        <p class="note">This example implementation is not thread save! After stop application you may need to restart the device.</p>
+        <img src="{{ url_for('stream') }}">
+    </div>
+</body>
+</html>
