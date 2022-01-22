@@ -16,6 +16,13 @@ The videos for identification can be found [here](src/video).
 
 The Cuda haarcascade file can be found [here](src/haarcascades).
 
+## Usage
+
+```shell
+# clone repository
+$ git clone https://github.com/Lupin3000/OpenCV_Examples.git
+```
+
 ## Table of Contents
 
 - [Lesson 1](examples/lesson_01)

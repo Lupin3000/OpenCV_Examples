@@ -1,8 +1,8 @@
 # Lesson 01
 
-## Usage
+> You will find that the results vary greatly. Also use your own images for the respective haarcascade files.
 
-You will find that the results vary greatly. Also use your own images for the respective haarcascade files.
+## Usage
 
 **Face Detection**
 

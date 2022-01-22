@@ -1,8 +1,8 @@
 # Lesson 02
 
-## Usage
+> You will find that the results vary greatly. Also use your own images for the respective haarcascade files.
 
-You will find that the results vary greatly. Also use your own videos for the respective haarcascade files.
+## Usage
 
 **Video Detection**
 
