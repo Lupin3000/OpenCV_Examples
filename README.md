@@ -35,3 +35,5 @@ $ git clone https://github.com/Lupin3000/OpenCV_Examples.git
   - [CSI Camera Detection](examples/lesson_02/csi_camera.py)
 - [Lesson 3](examples/lesson_03)
   - [Browser CSI Camera Detection](examples/lesson_03/flask_csi_camera.py)
+- [Lesson 4](examples/lesson_04)
+  - [Filter on Face](examples/lesson_04/filter_csi.py) 

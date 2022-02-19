@@ -23,7 +23,7 @@ $ pip3 install flask
 # change into directory
 $ cd OpenCV_Examples/examples/lesson_03/
 
-# show help
+# run web application
 $ python3 flask_csi_camera.py
 
 # open link from terminal
