@@ -8,10 +8,10 @@ You can adapt, improve and use the code for your projects as you wish. The autho
 
 ```shell
 # clone repository
-$ git clone
+$ git clone https://github.com/Lupin3000/OpenCV_Examples.git
 
 # change directory
-$ cd ~/Projects/
+$ cd ~/Projects/OpenCV_Examples/
 ```
 
 ## Prepare environment
