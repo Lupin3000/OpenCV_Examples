@@ -24,7 +24,7 @@ class FingerCount(ShowPlayer):
         results = hands.process(img_rgb)
 
         if results.multi_hand_landmarks:
-            height, width, _ = self.frame.shape
+            height, width, _ = self.frame_in.shape
 
             count = {'RIGHT': 0, 'LEFT': 0}
             fingers_tips_ids = [mp_hands.HandLandmark.INDEX_FINGER_TIP, mp_hands.HandLandmark.MIDDLE_FINGER_TIP,
