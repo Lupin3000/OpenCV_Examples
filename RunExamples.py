@@ -7,12 +7,15 @@ from src.examples.face_detection.dlib_face_landmark import DLIBFaceLandmark
 from src.examples.face_detection.haarcascade_multiple import HaarcascadeMultiple
 from src.examples.face_detection.haarcascade_single import HaarcascadeSingle
 from src.examples.face_detection.mediapipe_face_landmark import MPLandmark
+from src.examples.face_detection.cvzone_face_detection import CVZFace
+from src.examples.face_detection.cvzone_face_mesh import CVZFaceMesh
 from src.examples.other_detection.bleedfacedetector_emotion_detection import Emotion
 from src.examples.other_detection.deepface_item_detection import Deepface
 from src.examples.other_detection.haarcascade_car_detection import CarDetection
 from src.examples.other_detection.mediapipe_finger_count import FingerCount
 from src.examples.other_detection.mediapipe_hand_landmark import HandLandmark
 from src.examples.other_detection.opencv_color_detection import Color
+from src.examples.other_detection.cvzone_hand_tracking import CVZHandTracking
 from src.examples.road.lane_detection import LaneDetection
 from src.player.window import ShowPlayer
 
@@ -46,6 +49,10 @@ class Examples:
             player = DLIBFaceLandmark(title='[DLIB face landmark detection]', cap=self.input_source)
         elif self.show_example == 'face-6':
             player = MPLandmark(title='[Mediapipe face landmark detection]', cap=self.input_source)
+        elif self.show_example == 'face-7':
+            player = CVZFace(title='[CVZone face detection]', cap=self.input_source)
+        elif self.show_example == 'face-8':
+            player = CVZFaceMesh(title='[CVZone face mesh detection]', cap=self.input_source)
         elif self.show_example == 'other-1':
             player = Color(title='[OpenCV Color detection]', cap=self.input_source)
         elif self.show_example == 'other-2':
@@ -59,9 +66,9 @@ class Examples:
         elif self.show_example == 'other-6':
             player = CarDetection(title='[Haarcascade car detection]', cap=self.input_source)
         elif self.show_example == 'other-7':
+            player = CVZHandTracking(title='[CVZone Hand tracking]', cap=self.input_source)
+        elif self.show_example == 'road-1':
             player = LaneDetection(title='[Road lane detection]', cap=self.input_source)
-        elif self.show_example == 'filter-1':
-            player = FaceFilter(title='[Haarcascade face filter]', cap=self.input_source)
         else:
             player = ShowPlayer(title='[Camera player]')
 
