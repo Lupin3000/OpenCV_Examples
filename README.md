@@ -4,7 +4,9 @@
 
 You can adapt, improve and use the code for your projects as you wish. The author of this repository take no responsibility for your use or misuse or any damage on your devices!
 
-## Download repository
+## Instruction
+
+### Download repository
 
 ```shell
 # clone repository
@@ -14,7 +16,7 @@ $ git clone https://github.com/Lupin3000/OpenCV_Examples.git
 $ cd ~/Projects/OpenCV_Examples/
 ```
 
-## Prepare environment
+### Prepare environment
 
 ```shell
 # create virtualenv
@@ -33,7 +35,7 @@ $ source venv/bin/activate
 (venv) $ pip install -r requirements.txt
 ```
 
-## Run examples
+### Run examples
 
 Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `absolute/relative path` to video file. Values for `--example` are:
 
@@ -57,3 +59,30 @@ Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `abso
 # run color detection on video source
 (venv) $ python RunExamples.py -i src/video/Fish.mp4 -e other-1
 ```
+
+## Examples
+
+### --input=face-n
+
+1. [Haarcascade] face detection
+2. [Haarcascade] face, eye and smile detection
+3. [Dlib] CNN face detection
+4. [Dlib] HOG face detection
+5. [Dlib] face mesh detection
+6. [Mediapipe] face mesh detection
+7. [CVZone] face detection
+8. [CVZone] face mesh detection
+
+### --input=other-n
+
+1. [OpenCV] color detection
+2. [Bleedfacedetector] face emotion detection
+3. [Mediapipe] hand mesh detection
+4. [Mediapipe] finger count detection
+5. [Deepface] human detection
+6. [Haarcascade] car detection
+7. [CVZone] hand tracking
+
+### --input=aug-n
+
+1. [Haarcascade] face filter

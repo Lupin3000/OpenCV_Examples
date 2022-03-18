@@ -39,37 +39,37 @@ class Examples:
 
     def run_video(self):
         if self.show_example == 'face-1':
-            player = HaarcascadeSingle(title='[Haarcascade face detection]', cap=self.input_source)
+            player = HaarcascadeSingle(title='[Haarcascade] face detection', cap=self.input_source)
         elif self.show_example == 'face-2':
-            player = HaarcascadeMultiple(title='[Haarcascade multi item detection]', cap=self.input_source)
+            player = HaarcascadeMultiple(title='[Haarcascade] face, eye and smile detection', cap=self.input_source)
         elif self.show_example == 'face-3':
-            player = CnnFace(title='[DLIB CNN face detection]', cap=self.input_source)
+            player = CnnFace(title='[Dlib] CNN face detection', cap=self.input_source)
         elif self.show_example == 'face-4':
-            player = HogFace(title='[DLIB HOG face detection]', cap=self.input_source)
+            player = HogFace(title='[Dlib] HOG face detection', cap=self.input_source)
         elif self.show_example == 'face-5':
-            player = DLIBFaceLandmark(title='[DLIB face landmark detection]', cap=self.input_source)
+            player = DLIBFaceLandmark(title='[Dlib] face mesh detection', cap=self.input_source)
         elif self.show_example == 'face-6':
-            player = MPLandmark(title='[Mediapipe face landmark detection]', cap=self.input_source)
+            player = MPLandmark(title='[Mediapipe] face mesh detection', cap=self.input_source)
         elif self.show_example == 'face-7':
-            player = CVZFace(title='[CVZone face detection]', cap=self.input_source)
+            player = CVZFace(title='[CVZone] face detection', cap=self.input_source)
         elif self.show_example == 'face-8':
-            player = CVZFaceMesh(title='[CVZone face mesh detection]', cap=self.input_source)
+            player = CVZFaceMesh(title='[CVZone] face mesh detection', cap=self.input_source)
         elif self.show_example == 'other-1':
-            player = Color(title='[OpenCV Color detection]', cap=self.input_source)
+            player = Color(title='[OpenCV] color detection', cap=self.input_source)
         elif self.show_example == 'other-2':
-            player = Emotion(title='[Bleedfacedetector face emotion detection]', cap=self.input_source)
+            player = Emotion(title='[Bleedfacedetector] face emotion detection', cap=self.input_source)
         elif self.show_example == 'other-3':
-            player = HandLandmark(title='[Mediapipe hand landmark detection]', cap=self.input_source)
+            player = HandLandmark(title='[Mediapipe] hand mesh detection', cap=self.input_source)
         elif self.show_example == 'other-4':
-            player = FingerCount(title='[Mediapipe finger count detection]', cap=self.input_source)
+            player = FingerCount(title='[Mediapipe] finger count detection', cap=self.input_source)
         elif self.show_example == 'other-5':
-            player = Deepface(title='[Deepface item detection]', cap=self.input_source)
+            player = Deepface(title='[Deepface] human detection', cap=self.input_source)
         elif self.show_example == 'other-6':
-            player = CarDetection(title='[Haarcascade car detection]', cap=self.input_source)
+            player = CarDetection(title='[Haarcascade] car detection', cap=self.input_source)
         elif self.show_example == 'other-7':
-            player = CVZHandTracking(title='[CVZone Hand tracking]', cap=self.input_source)
+            player = CVZHandTracking(title='[CVZone] hand tracking', cap=self.input_source)
         elif self.show_example == 'aug-1':
-            player = FaceFilter(title='[Haarcascade Filter]', cap=self.input_source)
+            player = FaceFilter(title='[Haarcascade] face filter', cap=self.input_source)
         elif self.show_example == 'road-1':
             player = LaneDetection(title='[Road lane detection]', cap=self.input_source)
         else:
