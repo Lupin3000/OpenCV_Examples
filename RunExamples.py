@@ -16,6 +16,7 @@ from src.examples.other_detection.mediapipe_finger_count import FingerCount
 from src.examples.other_detection.mediapipe_hand_landmark import HandLandmark
 from src.examples.other_detection.opencv_color_detection import Color
 from src.examples.other_detection.cvzone_hand_tracking import CVZHandTracking
+from src.examples.other_detection.cvzone_pose_estimation import CVZPoseEstimation
 from src.examples.aug.face_filter import FaceFilter
 from src.examples.road.lane_detection import LaneDetection
 from src.player.window import ShowPlayer
@@ -68,6 +69,8 @@ class Examples:
             player = CarDetection(title='[Haarcascade] car detection', cap=self.input_source)
         elif self.show_example == 'other-7':
             player = CVZHandTracking(title='[CVZone] hand tracking', cap=self.input_source)
+        elif self.show_example == 'other-8':
+            player = CVZPoseEstimation(title='[CVZone] pose estimation', cap=self.input_source)
         elif self.show_example == 'aug-1':
             player = FaceFilter(title='[Haarcascade] face filter', cap=self.input_source)
         elif self.show_example == 'road-1':

@@ -40,7 +40,7 @@ $ source venv/bin/activate
 Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `absolute/relative path` to video file. Values for `--example` are:
 
 - face-[1-8] _simple face detection_
-- other-[1-7] _advanced item detection_
+- other-[1-8] _advanced item detection_
 - aug-1 _augmented reality examples_
 
 ```shell
@@ -82,6 +82,7 @@ Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `abso
 5. [Deepface] human detection
 6. [Haarcascade] car detection
 7. [CVZone] hand tracking
+8. [CVZone] pose estimation
 
 ### --input=aug-n
 
