@@ -13,7 +13,7 @@ class FaceFilter(ShowPlayer):
 
         face_cascade = cv.CascadeClassifier(default_xml_path + default_xml_file)
 
-        gray = cv.cvtColor(self.frame, cv.COLOR_BGR2GRAY)
+        gray = cv.cvtColor(self.frame_in, cv.COLOR_BGR2GRAY)
         black_white = cv.equalizeHist(gray)
 
         faces = face_cascade.detectMultiScale(black_white,
@@ -24,4 +24,4 @@ class FaceFilter(ShowPlayer):
 
         for (x, y, w, h) in faces:
             replacement_face_copy = cv.resize(replacement_face, (w, h))
-            self.frame[y:y + h, x:x + w] = replacement_face_copy
+            self.frame_out[y:y + h, x:x + w] = replacement_face_copy

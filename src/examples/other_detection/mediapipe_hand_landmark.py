@@ -14,15 +14,15 @@ class HandLandmark(ShowPlayer):
                                min_detection_confidence=0.5,
                                min_tracking_confidence=0.5)
         mp_draw = mp.solutions.drawing_utils
-        img_rgb = cv.cvtColor(self.frame, cv.COLOR_BGR2RGB)
+        img_rgb = cv.cvtColor(self.frame_out, cv.COLOR_BGR2RGB)
         results = hands.process(img_rgb)
 
         if results.multi_hand_landmarks:
             for handLms in results.multi_hand_landmarks:
                 for id, lm in enumerate(handLms.landmark):
-                    h, w, c = self.frame.shape
+                    h, w, c = self.frame_in.shape
                     cx, cy = int(lm.x * w), int(lm.y * h)
-                    cv.circle(self.frame, (cx, cy), 3, (255, 0, 255), cv.FILLED)
+                    cv.circle(self.frame_out, (cx, cy), 3, (255, 0, 255), cv.FILLED)
 
-                mp_draw.draw_landmarks(self.frame, handLms, mp_hands.HAND_CONNECTIONS)
+                mp_draw.draw_landmarks(self.frame_out, handLms, mp_hands.HAND_CONNECTIONS)
 

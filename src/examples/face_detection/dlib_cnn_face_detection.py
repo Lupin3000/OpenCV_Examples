@@ -10,7 +10,7 @@ class CnnFace(ShowPlayer):
     def _detect(self):
         detector = dlib.cnn_face_detection_model_v1("src/models/cnn/mmod_human_face_detector.dat")
 
-        frame_gray = cv.cvtColor(src=self.frame, code=cv.COLOR_BGR2GRAY)
+        frame_gray = cv.cvtColor(src=self.frame_in, code=cv.COLOR_BGR2GRAY)
 
         faces = detector(frame_gray)
 
@@ -20,4 +20,4 @@ class CnnFace(ShowPlayer):
             x2 = faceRect.rect.right()
             y2 = faceRect.rect.bottom()
 
-            cv.rectangle(self.frame, pt1=(x1, y1), pt2=(x2, y2), color=(0, 0, 255), thickness=2)
+            cv.rectangle(self.frame_out, pt1=(x1, y1), pt2=(x2, y2), color=(0, 0, 255), thickness=2)

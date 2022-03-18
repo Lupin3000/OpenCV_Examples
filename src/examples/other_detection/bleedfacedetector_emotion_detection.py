@@ -12,7 +12,7 @@ class Emotion(ShowPlayer):
         font = cv.FONT_HERSHEY_SIMPLEX
         line_type = cv.LINE_AA
 
-        cv.putText(self.frame, text, (50, 75), font, 0.75, (0, 0, 0), 1, line_type)
+        cv.putText(self.frame_out, text, (50, 75), font, 0.75, (0, 0, 0), 1, line_type)
 
     def _detect(self):
         roi_padding = 3
@@ -20,11 +20,11 @@ class Emotion(ShowPlayer):
         model = cv.dnn.readNetFromONNX('src/models/onnx/emotion-ferplus-8.onnx')
         emotions = ['Neutral', 'Happy', 'Surprise', 'Sad', 'Anger', 'Disgust', 'Fear', 'Contempt']
 
-        faces = fd.ssd_detect(self.frame, conf=confidence)
+        faces = fd.ssd_detect(self.frame_in, conf=confidence)
 
         for x_pos, y_pos, width, height in faces:
-            face = self.frame[y_pos - roi_padding:y_pos + height + roi_padding,
-                   x_pos - roi_padding:x_pos + width + roi_padding]
+            face = self.frame_in[y_pos - roi_padding:y_pos + height + roi_padding,
+                                 x_pos - roi_padding:x_pos + width + roi_padding]
 
             frame_gray = cv.cvtColor(face, cv.COLOR_BGR2GRAY)
 
@@ -40,6 +40,6 @@ class Emotion(ShowPlayer):
             prob = np.squeeze(probabilities)
             predicted_emotion = emotions[prob.argmax()]
 
-            cv.rectangle(self.frame, (x_pos, y_pos), (x_pos + width, y_pos + height), (0, 0, 255), 2)
+            cv.rectangle(self.frame_out, (x_pos, y_pos), (x_pos + width, y_pos + height), (0, 0, 255), 2)
 
             self.write_output_text('emotion: {}'.format(predicted_emotion))

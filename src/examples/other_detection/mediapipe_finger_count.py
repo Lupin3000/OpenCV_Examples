@@ -11,7 +11,7 @@ class FingerCount(ShowPlayer):
         font = cv.FONT_HERSHEY_SIMPLEX
         line_type = cv.LINE_AA
 
-        cv.putText(self.frame, text, (50, 75), font, 0.75, (0, 0, 0), 1, line_type)
+        cv.putText(self.frame_out, text, (50, 75), font, 0.75, (0, 0, 0), 1, line_type)
 
     def _detect(self):
         mp_hands = mp.solutions.hands
@@ -20,7 +20,7 @@ class FingerCount(ShowPlayer):
                                min_detection_confidence=0.5,
                                min_tracking_confidence=0.5)
 
-        img_rgb = cv.cvtColor(self.frame, cv.COLOR_BGR2RGB)
+        img_rgb = cv.cvtColor(self.frame_in, cv.COLOR_BGR2RGB)
         results = hands.process(img_rgb)
 
         if results.multi_hand_landmarks:

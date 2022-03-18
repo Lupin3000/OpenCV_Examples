@@ -16,7 +16,7 @@ class HaarcascadeMultiple(ShowPlayer):
         eye_cascade = cv.CascadeClassifier(default_xml_path + eye_xml_file)
         smile_cascade = cv.CascadeClassifier(default_xml_path + smile_xml_file)
 
-        frame_gray = cv.cvtColor(self.frame, cv.COLOR_BGR2GRAY)
+        frame_gray = cv.cvtColor(self.frame_in, cv.COLOR_BGR2GRAY)
         black_white = cv.equalizeHist(frame_gray)
 
         faces = face_cascade.detectMultiScale(black_white,
@@ -26,10 +26,10 @@ class HaarcascadeMultiple(ShowPlayer):
                                               flags=cv.CASCADE_SCALE_IMAGE)
 
         for (x, y, w, h) in faces:
-            cv.rectangle(self.frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+            cv.rectangle(self.frame_out, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
             roi_gray = frame_gray[y:y + h, x:x + w]
-            roi_color = self.frame[y:y + h, x:x + w]
+            roi_color = self.frame_in[y:y + h, x:x + w]
 
             smiles = smile_cascade.detectMultiScale(roi_gray, 1.8, 20)
 
