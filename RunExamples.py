@@ -18,6 +18,7 @@ from src.examples.other_detection.opencv_color_detection import Color
 from src.examples.other_detection.cvzone_hand_tracking import CVZHandTracking
 from src.examples.other_detection.cvzone_pose_estimation import CVZPoseEstimation
 from src.examples.aug.face_filter import FaceFilter
+from src.examples.aug.cvzone_background import CVZoneBackgroundFilter
 from src.examples.road.lane_detection import LaneDetection
 from src.player.window import ShowPlayer
 
@@ -73,6 +74,8 @@ class Examples:
             player = CVZPoseEstimation(title='[CVZone] pose estimation', cap=self.input_source)
         elif self.show_example == 'aug-1':
             player = FaceFilter(title='[Haarcascade] face filter', cap=self.input_source)
+        elif self.show_example == 'aug-2':
+            player = CVZoneBackgroundFilter(title='[CVZone] background filter', cap=self.input_source)
         elif self.show_example == 'road-1':
             player = LaneDetection(title='[Road lane detection]', cap=self.input_source)
         else:

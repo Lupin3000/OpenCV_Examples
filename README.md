@@ -41,7 +41,7 @@ Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `abso
 
 - face-[1-8] _simple face detection_
 - other-[1-8] _advanced item detection_
-- aug-1 _augmented reality examples_
+- aug-[1-2] _augmented reality examples_
 
 ```shell
 # show help
@@ -87,3 +87,4 @@ Values for `--input` are standard camera for macOS/Linux `[0-9]`, `csi` or `abso
 ### --input=aug-n
 
 1. [Haarcascade] face filter
+2. [CVZone] background filter
